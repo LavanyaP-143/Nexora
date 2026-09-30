@@ -1,0 +1,35 @@
+{
+  "name": "snapshield-context-classifier-onnx",
+  "version": "0.1.0",
+  "format": "onnx",
+  "task": "context-classification",
+  "description": "Qualcomm AI Hub compiled context classifier for local on-device neural inference.",
+  "file_path": "snapshield-context-classifier.onnx",
+  "sha256_checksum": null,
+  "local_only": true,
+  "provider": "auto",
+  "runtime": "ONNX Runtime / QNN Execution Provider",
+  "supported_devices": [
+    "CPU",
+    "GPU",
+    "NPU",
+    "ARM64",
+    "x86_64"
+  ],
+  "supported_architecture": [
+    "ARM64",
+    "x86_64",
+    "AMD64"
+  ],
+  "size_bytes": null,
+  "source": "Qualcomm AI Hub Artifact Registry",
+  "installation_date": "2026-09-30T15:35:54.236763+00:00",
+  "verified": false,
+  "verification_status": "UNVERIFIED",
+  "qualcomm_optimized": true,
+  "aihub_metadata": {
+    "target_runtime": "ONNX Runtime / QNN",
+    "optimization_level": "FP16 / INT8 Quantized",
+    "supported_accelerator": "Qualcomm Hexagon NPU"
+  }
+}

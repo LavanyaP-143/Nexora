@@ -1,0 +1,18 @@
+{
+  "name": "nexora",
+  "version": "0.1.0",
+  "description": "Nexora - Your Snapdragon PC. Your Private AI Guardian.",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm run backend\" \"npm run frontend\"",
+    "start": "npm run dev",
+    "frontend": "npm run dev --prefix frontend",
+    "backend": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"& backend/.venv/Scripts/uvicorn app.main:app --reload --host 127.0.0.1 --port 8000 --app-dir backend\"",
+    "build": "npm run build --prefix frontend",
+    "test": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"& backend/.venv/Scripts/pytest backend/tests\"",
+    "install:all": "npm install && npm install --prefix frontend && pip install -r backend/requirements.txt"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

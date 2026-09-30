@@ -1,0 +1,1 @@
+CONFIDENTIAL: User john@test.com with token AKIAIOSFODNN7EXAMPLE.

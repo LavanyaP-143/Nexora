@@ -1,0 +1,29 @@
+{
+  "name": "snapshield-context-classifier-cpu",
+  "version": "1.0.0",
+  "format": "rule_fallback",
+  "task": "context-classification",
+  "description": "Built-in lightweight local context classifier for disambiguation and sensitive context detection.",
+  "file_path": "builtin",
+  "sha256_checksum": null,
+  "local_only": true,
+  "provider": "CPU",
+  "runtime": "SnapShield Local Rule Engine",
+  "supported_devices": [
+    "CPU",
+    "x86_64",
+    "ARM64"
+  ],
+  "supported_architecture": [
+    "ARM64",
+    "x86_64",
+    "AMD64"
+  ],
+  "size_bytes": 0,
+  "source": "SnapShield Local Core",
+  "installation_date": "2026-09-30T15:35:54.235326+00:00",
+  "verified": true,
+  "verification_status": "VERIFIED",
+  "qualcomm_optimized": false,
+  "aihub_metadata": null
+}
